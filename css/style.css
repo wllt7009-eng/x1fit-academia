@@ -100,3 +100,34 @@ header { padding: 15px; text-align: center; background: #000; position: sticky; 
 .item-placeholder h4 { font-size: 0.9rem; margin-bottom: 5px; }
 .item-placeholder p { font-size: 0.7rem; color: #666; margin-bottom: 15px; }
 .btn-fake { background: #222; color: #555; border: none; padding: 10px; width: 100%; border-radius: 5px; font-size: 0.7rem; font-weight: bold; }
+/* --- BOTÃO DE SUPLEMENTOS (PEQUENO E DISCRETO) --- */
+.feature-row .text a {
+    display: inline-flex;
+    align-items: center;
+    margin-top: 12px;
+    padding: 6px 12px;
+    
+    background: transparent;
+    border: 1px solid var(--primary);
+    border-radius: 5px;
+    
+    color: var(--primary) !important;
+    text-decoration: none;
+    font-size: 0.65rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    transition: 0.3s;
+}
+
+/* Efeito ao clicar/passar o mouse */
+.feature-row .text a:hover {
+    background: var(--primary);
+    color: black !important;
+}
+
+.feature-row .text a i {
+    margin-left: 5px;
+    font-size: 0.6rem;
+}
+
