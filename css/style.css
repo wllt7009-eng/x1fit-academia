@@ -62,31 +62,27 @@ header { padding: 15px; text-align: center; background: #000; position: sticky; 
 .feature-row h2 { font-size: 1.4rem; line-height: 1; }
 .icon-box i { font-size: 3rem; color: var(--primary); }
 
-/* Botãozinho de Suplementos */
-.feature-row .text a {
-    display: inline-flex !important;
-    align-items: center !important;
-    margin-top: 12px !important;
-    padding: 6px 12px !important;
-    background: transparent !important;
-    border: 1px solid var(--primary) !important;
-    border-radius: 5px !important;
-    color: var(--primary) !important; 
-    text-decoration: none !important;
-    font-size: 0.65rem !important;
-    font-weight: 700 !important;
-    text-transform: uppercase !important;
-    transition: 0.3s !important;
+/* --- BOTÃO DE SUPLEMENTOS (MANTIDO IGUAL ESTAVA) --- */
+.btn-shop {
+    display: inline-block;
+    margin-top: 15px;
+    background: var(--primary) !important;
+    color: black !important;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 0.75rem;
+    padding: 8px 15px;
+    border-radius: 5px;
+    transition: 0.3s;
 }
-.feature-row .text a:hover { background: var(--primary) !important; color: #000 !important; }
 
-/* INDICADOR DE ARRASTAR (ATUALIZADO E MAIS ALTO) */
+/* --- FRASE "ARRASTE PARA O LADO" (MAIS ALTA E DESTACADA) --- */
 .swipe-indicator {
     text-align: center;
     font-size: 0.85rem;
     font-weight: 800;
     color: var(--primary);
-    margin: -5px 0 25px 0; /* Coladinho no card de cima */
+    margin: -5px 0 25px 0; /* Sobe a frase para perto do card */
     display: flex;
     align-items: center;
     justify-content: center;
@@ -115,13 +111,5 @@ header { padding: 15px; text-align: center; background: #000; position: sticky; 
     background: #1a1a1a; padding: 20px; border-radius: 15px; 
     display: flex; align-items: center; gap: 20px; border-left: 5px solid var(--primary);
 }
-.owner-card img { width: 80px; height: 80px; border-radius: 50%; object-fit: cover; }
-.label { font-size: 0.6rem; color: var(--primary); font-weight: bold; }
-.owner-card h3 { font-size: 1.1rem; }
-
-/* WhatsApp */
-.whatsapp-btn { 
-    position: fixed; bottom: 20px; right: 20px; background: #25d366; 
-    width: 60px; height: 60px; border-radius: 50%; display: flex; 
-    align-items: center; justify-content: center; font-size: 30px; color: white; z-index: 1000;
-}
+.owner-card img { width: 80px; height: 80px; border-radius: 50%;
+                 
