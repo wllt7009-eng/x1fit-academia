@@ -130,4 +130,42 @@ header { padding: 15px; text-align: center; background: #000; position: sticky; 
     margin-left: 5px;
     font-size: 0.6rem;
 }
+/* --- CONFIGURAÇÃO DO CARROSSEL --- */
+.benefits-slider {
+    display: flex;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory; /* Faz o efeito de "imã" ao deslizar */
+    gap: 15px;
+    padding-bottom: 5px;
+    scrollbar-width: none; /* Esconde barra no Firefox */
+}
+
+.benefits-slider::-webkit-scrollbar {
+    display: none; /* Esconde barra no Chrome/Xiaomi */
+}
+
+.benefit-card {
+    min-width: 100%; /* Cada card ocupa a tela toda */
+    scroll-snap-align: center;
+}
+
+/* Indicador de movimento */
+.swipe-indicator {
+    text-align: center;
+    font-size: 0.7rem;
+    color: var(--primary);
+    margin: -10px 0 20px 0;
+    opacity: 0.5;
+    animation: side-to-side 2s infinite;
+}
+
+@keyframes side-to-side {
+    0%, 100% { transform: translateX(0); }
+    50% { transform: translateX(5px); }
+}
+
+/* Ajuste fino para não encostar nas bordas */
+.main-sections {
+    padding: 20px 15px;
+}
 
